@@ -5,7 +5,7 @@ function App() {
   const images = [
     {
       src: 'https://raw.githubusercontent.com/Errahum/HeliosFinance/4ac54cdf9a00db22f5dfbcd812ee3063243c8596/assets/Helios-Github.svg',
-      title: 'Helios GitHub',
+      title: 'Helios Finance',
       description: '...',
       category: 'finance'
     },
@@ -34,7 +34,7 @@ function App() {
   return (
   <div className="App">
     <header className="App-header">
-      <h1>Mon Portfolio</h1>
+      <h1>Mon Portfolio WIP</h1>
       <div className="gallery">
         {categories.map((category) => (
           <div key={category} className="category-section">
