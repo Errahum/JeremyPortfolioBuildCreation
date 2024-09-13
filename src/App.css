@@ -94,7 +94,7 @@
   border-radius: 2px;
 }
 
-.button-link, button {
+.button-link {
   background-color: #376fc2;
   border: none;
   color: white;
@@ -103,11 +103,12 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: -10px -10px;
   cursor: pointer;
   border-radius: 2px;
 }
 
-.image-container button:hover{
+.button-link:hover {
   transform: scale(1.1);
+  background-color: #285a9e; /* Pour changer la couleur au survol si nécessaire */
 }
+

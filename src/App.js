@@ -51,9 +51,10 @@ function App() {
                     <h3>{image.title}</h3>
                     <img src={image.src} alt={image.title} />
                     <p>{image.description}</p>
-                    <button>
-                      <a href={image.href} target="_blank" rel="noopener noreferrer" className="button-link">More</a>
-                    </button>
+                    <a href={image.href} target="_blank" rel="noopener noreferrer" className="button-link">
+                      More
+                    </a>
+
                   </div>
                 ))}
             </div>
