@@ -6,35 +6,39 @@ function App() {
     {
       src: 'https://raw.githubusercontent.com/Errahum/HeliosFinance/4ac54cdf9a00db22f5dfbcd812ee3063243c8596/assets/Helios-Github.svg',
       title: 'Helios Finance',
-      description: '...',
-      category: 'finance'
+      description: 'Heliosfinance is designed to assist finance developers by providing free access to data, a structured project setup for using Jupyter Notebooks with various tools. Share and gain knowledge!',
+      category: 'finance',
+      href: ''
     },
     {
       src: 'https://raw.githubusercontent.com/Errahum/HeliosChart/main/helioschart.gif',
       title: 'Helios Chart',
-      description: '...',
-      category: 'finance'
+      description: 'PyQt5 Candlestick Chart for traders',
+      category: 'finance',
+      href: ''
     },
     {
       src: 'https://i.imgur.com/2qNkuMo.gif',
       title: 'Batailles de Timealot',
-      description: '...',
-      category: 'game'
+      description: '1V1 top-view battles focusing on strategy and class interaction.',
+      category: 'game',
+      href: ''
     },
     {
       src: 'https://i.imgur.com/0pZYOxT.gif',
       title: 'HeliosTuner OpenAI fine-tuning',
-      description: '...',
-      category: 'tool'
+      description: 'About Fine-tuning allows improving the models performance on specific tasks by using additional training data.',
+      category: 'tool',
+      href: ''
     },
   ];
 
-  const categories = ['finance', 'game', 'tool'];
+  const categories = ['finance', 'tool', 'game'];
 
   return (
   <div className="App">
     <header className="App-header">
-      <h1>Mon Portfolio WIP</h1>
+      {/* <h1>Mon Portfolio WIP</h1> */}
       <div className="gallery">
         {categories.map((category) => (
           <div key={category} className="category-section">
@@ -44,10 +48,10 @@ function App() {
                 .filter((image) => image.category === category)
                 .map((image, index) => (
                   <div key={index} className="image-container">
-                    <img src={image.src} alt={image.title} />
                     <h3>{image.title}</h3>
+                    <img src={image.src} alt={image.title} />
                     <p>{image.description}</p>
-                    <button>Voir plus</button>
+                    <button>See more</button>
                   </div>
                 ))}
             </div>
