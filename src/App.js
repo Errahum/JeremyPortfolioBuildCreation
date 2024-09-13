@@ -8,28 +8,28 @@ function App() {
       title: 'Helios Finance',
       description: 'Heliosfinance is designed to assist finance developers by providing free access to data, a structured project setup for using Jupyter Notebooks with various tools. Share and gain knowledge!',
       category: 'finance',
-      href: ''
+      href: 'https://github.com/Errahum/HeliosFinance'
     },
     {
       src: 'https://raw.githubusercontent.com/Errahum/HeliosChart/main/helioschart.gif',
       title: 'Helios Chart',
       description: 'PyQt5 Candlestick Chart for traders',
       category: 'finance',
-      href: ''
+      href: 'https://github.com/Errahum/HeliosChart'
     },
     {
       src: 'https://i.imgur.com/2qNkuMo.gif',
       title: 'Batailles de Timealot',
       description: '1V1 top-view battles focusing on strategy and class interaction.',
       category: 'game',
-      href: ''
+      href: 'https://github.com/Errahum/Battles-Of-Timealot'
     },
     {
       src: 'https://i.imgur.com/0pZYOxT.gif',
       title: 'HeliosTuner OpenAI fine-tuning',
       description: 'About Fine-tuning allows improving the models performance on specific tasks by using additional training data.',
       category: 'tool',
-      href: ''
+      href: 'https://github.com/Errahum/HeliosTuner'
     },
   ];
 
@@ -51,7 +51,9 @@ function App() {
                     <h3>{image.title}</h3>
                     <img src={image.src} alt={image.title} />
                     <p>{image.description}</p>
-                    <button>See more</button>
+                    <button>
+                      <a href={image.href} target="_blank" rel="noopener noreferrer" className="button-link">More</a>
+                    </button>
                   </div>
                 ))}
             </div>

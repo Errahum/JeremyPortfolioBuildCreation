@@ -94,7 +94,7 @@
   border-radius: 2px;
 }
 
-.image-container button{
+.button-link, button {
   background-color: #376fc2;
   border: none;
   color: white;
@@ -103,12 +103,11 @@
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: -10px -10px;
   cursor: pointer;
   border-radius: 2px;
 }
 
 .image-container button:hover{
-  background-color: #72a5f1;
   transform: scale(1.1);
 }
